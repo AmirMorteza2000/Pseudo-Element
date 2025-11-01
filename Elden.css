@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Broken-Willow';
+    src: url(./Fonts/Broken\ Willow\ Free.ttf);
+}
+
+body {
+    background-color: silver;
+}
+
+
+.container {
+    width: 500px;
+    height: 630px;
+    border-radius: 20px;
+    margin: 100px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(49, 50, 50);
+    background-size: cover;
+    background-position: center;
+}
+
+#Ranni,
+#Malenia,
+#Friede {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 410px;
+    z-index: 1;
+}
+
+/* ? Ranni Start */
+#Ranni {
+    color: cornflowerblue;
+    font-family: 'Broken-Willow';
+    font-weight: 600;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; 
+    width: 400px;
+    font-size: 22px;
+}
+
+#Ranni::before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url(./images/Ranni.jpg);
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    box-shadow: -2px 2px 15px rgb(144, 185, 241);
+    animation: Ranni 2s infinite ease-in-out;
+}
+
+@keyframes Ranni {
+    0% {
+        box-shadow: -2px 2px 15px rgb(144, 185, 241);
+    }
+
+    50% {
+        box-shadow: -4px 4px 20px rgb(200, 220, 255);
+    }
+
+    100% {
+        box-shadow: -2px 2px 15px rgb(144, 185, 241);
+    }
+}
+
+/* ? Ranni End */
+
+
+/* ? Malenia Start */
+#Malenia {
+    color: crimson;
+    font-family: 'Broken-Willow';
+    font-weight: lighter;
+    font-size: 18px;
+    width: 410px;
+}
+
+#Malenia::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-image: url(./images/malenia\ 1.jpg);
+    border-radius: 50px;
+    background-size: cover;
+    background-position: 65%;
+    vertical-align: middle;
+    box-shadow: -2px 2px 15px rgb(252, 3, 65);
+    animation: Malenia 2s infinite ease-in-out;
+}
+
+@keyframes Malenia {
+    0% {
+        box-shadow: -2px 2px 15px rgb(252, 3, 65);
+    }
+
+    50% {
+        box-shadow: -4px 4px 20px rgb(255, 100, 120);
+    }
+
+    100% {
+        box-shadow: -2px 2px 15px rgb(252, 3, 65);
+    }
+}
+
+/* ? Malenia End */
+
+
+/* ? Friede Start */
+#Friede {
+    font-family: 'Broken-Willow';
+    color: silver;
+    font-size: 22px;
+}
+
+#Friede::before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-image: url(./images/Friede.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: -2px 2px 15px;
+    animation: Friede 2s infinite ease-in-out;
+}
+
+@keyframes Friede {
+    0% {
+        box-shadow: 0 0 15px rgba(192, 192, 192, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(220, 220, 220, 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(192, 192, 192, 0.8);
+    }
+}
+/* ? Friede End */
